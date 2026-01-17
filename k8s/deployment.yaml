@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: fraudflow-api
-        image: rahulrajparida/fraudflow-api:latest
+        image: rahulrajparida/fraudflow-api:2f2a9c0dd6ec1d30678787032faa8b658c6f9efc
         imagePullPolicy: Always   
         ports:
         - containerPort: 8000
