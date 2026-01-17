@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fraudflow-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fraudflow-api
+  template:
+    metadata:
+      labels:
+        app: fraudflow-api
+    spec:
+      containers:
+      - name: fraudflow-api
+        image: fraudflow-api:latest
+        imagePullPolicy: Never   # using local docker image
+        ports:
+        - containerPort: 8000
