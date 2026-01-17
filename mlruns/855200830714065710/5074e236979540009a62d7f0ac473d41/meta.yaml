@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Rahul/Desktop/mlops/projects/interview/fraudflow/mlruns/855200830714065710/5074e236979540009a62d7f0ac473d41/artifacts
+end_time: 1768632050241
+entry_point_name: ''
+experiment_id: '855200830714065710'
+lifecycle_stage: active
+run_id: 5074e236979540009a62d7f0ac473d41
+run_name: learned-bird-962
+run_uuid: 5074e236979540009a62d7f0ac473d41
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1768632037538
+status: 3
+tags: []
+user_id: Rahul

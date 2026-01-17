@@ -37,7 +37,8 @@ class Transaction(BaseModel):
 
 app = FastAPI()
 
-model = mlflow.pyfunc.load_model("models:/fraudflow_model/None")
+# Load local serialized production model
+model = mlflow.pyfunc.load_model("models/latest_model")
 
 @app.post("/predict")
 def predict(tx: Transaction):

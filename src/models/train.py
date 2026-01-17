@@ -4,6 +4,7 @@ import mlflow
 import mlflow.xgboost
 import yaml
 from sklearn.metrics import roc_auc_score
+import os
 
 def load_params():
     with open("params.yaml") as f:
@@ -33,7 +34,7 @@ def main():
     with mlflow.start_run():
         model.fit(X_train, y_train)
 
-        preds = model.predict_proba(X_val)[:,1]
+        preds = model.predict_proba(X_val)[:, 1]
         auc = roc_auc_score(y_val, preds)
 
         mlflow.log_params({
@@ -44,9 +45,19 @@ def main():
 
         mlflow.log_metric("val_auc", auc)
 
-        mlflow.xgboost.log_model(model, artifact_path="model", registered_model_name="fraudflow_model")
+        # Log to MLflow registry (control plane)
+        mlflow.xgboost.log_model(
+            model,
+            artifact_path="model",
+            registered_model_name="fraudflow_model"
+        )
+
+        # Save production-ready serialized model (runtime plane)
+        os.makedirs("models/latest_model", exist_ok=True)
+        mlflow.xgboost.save_model(model, path="models/latest_model")
 
         print("Validation AUC:", auc)
+        print("Serialized model saved to models/latest_model")
 
 if __name__ == "__main__":
     main()
