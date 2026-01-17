@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1768628984517
+current_stage: None
+description: null
+last_updated_timestamp: 1768628984517
+name: fraudflow_model
+run_id: 365c708300164875bc1c5eb5bead4483
+run_link: null
+source: file:///C:/Users/Rahul/Desktop/mlops/projects/interview/fraudflow/mlruns/855200830714065710/365c708300164875bc1c5eb5bead4483/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/Rahul/Desktop/mlops/projects/interview/fraudflow/mlruns/855200830714065710/365c708300164875bc1c5eb5bead4483/artifacts/model
+user_id: null
+version: 1

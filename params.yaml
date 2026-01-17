@@ -1,0 +1,7 @@
+train:
+  test_path: data/processed/train.csv
+  val_path: data/processed/val.csv
+  model_type: xgboost
+  n_estimators: 200
+  max_depth: 6
+  learning_rate: 0.1
