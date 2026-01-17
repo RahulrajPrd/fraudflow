@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
       - name: fraudflow-api
-        image: fraudflow-api:latest
-        imagePullPolicy: Never   # using local docker image
+        image: rahulrajparida/fraudflow-api:latest
+        imagePullPolicy: Always   
         ports:
         - containerPort: 8000
 
