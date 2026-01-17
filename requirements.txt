@@ -7,3 +7,4 @@ pyyaml
 fastapi
 uvicorn
 requests
+evidently
