@@ -4,3 +4,5 @@ xgboost
 mlflow
 dvc
 pyyaml
+fastapi
+uvicorn
