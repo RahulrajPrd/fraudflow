@@ -6,3 +6,4 @@ dvc
 pyyaml
 fastapi
 uvicorn
+requests
