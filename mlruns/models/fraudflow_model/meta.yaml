@@ -1,5 +1,7 @@
 aliases: {}
 creation_timestamp: 1768628984505
+deployment_job_id: null
+deployment_job_state: null
 description: null
-last_updated_timestamp: 1768632046482
+last_updated_timestamp: 1768656813824
 name: fraudflow_model

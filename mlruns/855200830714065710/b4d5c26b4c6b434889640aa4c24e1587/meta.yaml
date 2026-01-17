@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Rahul/Desktop/mlops/projects/interview/fraudflow/mlruns/855200830714065710/b4d5c26b4c6b434889640aa4c24e1587/artifacts
+end_time: 1768656813896
+entry_point_name: ''
+experiment_id: '855200830714065710'
+lifecycle_stage: active
+run_id: b4d5c26b4c6b434889640aa4c24e1587
+run_name: stately-owl-457
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1768656802710
+status: 4
+tags: []
+user_id: Rahul

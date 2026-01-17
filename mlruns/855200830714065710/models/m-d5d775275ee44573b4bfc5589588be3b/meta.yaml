@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/Rahul/Desktop/mlops/projects/interview/fraudflow/mlruns/855200830714065710/models/m-d5d775275ee44573b4bfc5589588be3b/artifacts
+creation_timestamp: 1768656806246
+experiment_id: '855200830714065710'
+last_updated_timestamp: 1768656813696
+model_id: m-d5d775275ee44573b4bfc5589588be3b
+model_type: null
+name: model
+source_run_id: b4d5c26b4c6b434889640aa4c24e1587
+status: 2
+status_message: null
